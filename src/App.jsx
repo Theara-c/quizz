@@ -20,6 +20,7 @@ function App() {
   }
   function increasePrice() {
     // TODO Update the value in dollars by increasing it by 5
+    valueDollars+=5;
   }
   return (
     <main>
@@ -34,7 +35,7 @@ function App() {
 
         <label>Value in Euro</label>
         <input disabled value={dollarToEuro(valueDollars)} />
-        {/* TODO */}
+        <increasePrice />
         <button>Increase Price + 5</button>
 
       </p>
